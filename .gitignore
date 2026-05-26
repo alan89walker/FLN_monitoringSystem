@@ -47,6 +47,11 @@ Thumbs.db
 *.backup
 *~
 
+# Excel files
+*.xlsx
+*.xls
+*.csv
+
 # Node modules (if using npm)
 node_modules/
 package-lock.json
