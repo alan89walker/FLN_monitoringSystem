@@ -1,0 +1,55 @@
+# Setup & Documentation files
+ATTENDANCE_ANALYTICS_SETUP.md
+LOCAL_SETUP_GUIDE.md
+QUICK_START.md
+SETUP_FOR_OTHERS.md
+XAMPP_SETUP.md
+TESTING_CHECKLIST.md
+COMPLETE_SETUP_DOCUMENTATION.html
+SETUP_GUIDE.html
+documentation.html
+help-center.html
+TECHNICAL_SPECS.md
+
+# Third-party libraries (managed via composer)
+TCPDF-main/
+vendor/
+
+# Generated/temporary files
+*.log
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.env.local
+.env.*.local
+
+# Cache files
+*.cache
+.cache/
+
+# Database files (if using local SQLite)
+*.db
+*.sqlite
+*.sqlite3
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Node modules (if using npm)
+node_modules/
+package-lock.json
+
+# Composer
+composer.lock
