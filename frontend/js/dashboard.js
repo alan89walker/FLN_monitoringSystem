@@ -368,7 +368,7 @@ async function populateSchools(clusterName, schoolSelect) {
 
     let schools = [];
     try {
-        const response = await fetch(`api/get_schools.php?cluster=${encodeURIComponent(clusterName)}`);
+        const response = await fetch(`../../backend/api/get_schools.php?cluster=${encodeURIComponent(clusterName)}`);
         const payload = await response.json();
         schools = payload.success ? payload.data.schools : [];
     } catch (error) {
@@ -404,7 +404,7 @@ async function loadAnalytics(elements) {
     badge.textContent = 'Refreshing attendance analytics...';
 
     try {
-        const response = await fetch(`api/attendance_analytics.php?${params.toString()}`, {
+        const response = await fetch(`../../backend/api/attendance_analytics.php?${params.toString()}`, {
             signal: analyticsState.abortController.signal,
             cache: 'no-store',
         });
@@ -1341,7 +1341,7 @@ async function exportDashboardAsPdf(elements) {
 
     try {
         const params = getFilterParams(elements);
-        const exportUrl = `api/export_attendance_pdf.php?${params.toString()}`;
+        const exportUrl = `../../backend/api/export_attendance_pdf.php?${params.toString()}`;
         window.open(exportUrl, '_blank', 'noopener');
     } catch (error) {
         window.alert(`Unable to export PDF: ${error.message}`);

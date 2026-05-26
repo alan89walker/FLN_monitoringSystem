@@ -4,9 +4,9 @@
    ============================================================ */
 
 const API_ENDPOINTS = {
-  schools: 'api/get_schools.php',
-  schoolContext: 'api/get_school_context.php',
-  saveMonitoring: 'api/save_monitoring.php',
+  schools: '../../backend/api/get_schools.php',
+  schoolContext: '../../backend/api/get_school_context.php',
+  saveMonitoring: '../../backend/api/save_monitoring.php',
 };
 
 const workbookSchoolDirectory = {
